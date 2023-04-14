@@ -28,7 +28,7 @@ const Header = () => {
         dispatch({ type: 'ENTRY_CREATE_RESET' })
 
         if(successCreate) {
-            history(`/entry/${createdEntry._id}/edit`)
+            history(`/entry/${createdEntry._id}/new`)
         } else {
             dispatch(listEntries())
         }

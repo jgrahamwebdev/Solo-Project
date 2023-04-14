@@ -10,7 +10,7 @@ import FormContainer from '../components/FormContainer'
 import { listEntryDetails, updateEntry, deleteEntry } from '../actions/entryActions'
 
 
-const NewPostScreen = () => {
+const EditPostScreen = () => {
     const { id } = useParams(); 
     const history = useNavigate()
     const dispatch = useDispatch()
@@ -98,7 +98,7 @@ const NewPostScreen = () => {
     return (
         <>
         <FormContainer>
-        <h1>Create New Post:</h1>
+        <h1>Edit Post:</h1>
         {loading ? (
           <Loader />
         ) : error ? (
@@ -147,7 +147,7 @@ const NewPostScreen = () => {
             </Button>
 
             <Link to='/profile'>
-              <Button type='submit' variant='danger' className='my-3' onClick={() => deleteHandler(entry._id)}>
+              <Button type='submit' variant='danger' className='my-3'>
                 Cancel
               </Button>
             </Link>
@@ -158,4 +158,4 @@ const NewPostScreen = () => {
     )
 }
 
-export default NewPostScreen
+export default EditPostScreen
