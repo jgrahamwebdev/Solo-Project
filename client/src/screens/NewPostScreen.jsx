@@ -121,7 +121,7 @@ const NewPostScreen = () => {
             </Form.Group>
 
             <Form.Group controlId='image' className='my-3'>
-              <Form.Label>Image</Form.Label>
+              <Form.Label>Image:</Form.Label>
               <Form.Control
                 type='text'
                 placeholder='Enter image url'

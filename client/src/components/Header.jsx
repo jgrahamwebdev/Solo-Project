@@ -45,7 +45,7 @@ const Header = () => {
     return (
         <header className='mb-4'>
         {/*variant changes the font color to be opposite of dark making font light */}
-        <Navbar className='h-[4.5rem]' bg="dark" variant='dark' expand="lg" collapseOnSelect>
+        <Navbar className='h-[4.5rem]' bg="primary" variant='dark' expand="lg" collapseOnSelect>
             <Container>  
                 {/* LOGO */}
                 <LinkContainer to="/">

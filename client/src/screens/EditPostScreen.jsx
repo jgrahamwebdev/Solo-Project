@@ -143,7 +143,7 @@ const EditPostScreen = () => {
             </Form.Group>
 
             <Button type='submit' variant='success' className='my-3 mr-4'>
-                Submit Post
+                Update Post
             </Button>
 
             <Link to='/profile'>
